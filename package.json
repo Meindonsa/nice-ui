@@ -2,16 +2,18 @@
   "name": "@meindonsa/nice-ui",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/css/nice-ui.css",
+  "style": "dist/css/nice-ui.css",
   "files": [
-    "src/index.scss",
+    "src/nice-ui.scss",
     "src/"
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "build:css": "sass src/index.scss dist/css/nice-ui.css --style expanded",
-    "copy:scss": "copyfiles -u 1 src/**/*.scss dist/scss/",
-    "build": "npm run clean && npm run build:css && npm run copy:scss"
+    "build:css": "sass src/nice-ui.scss dist/css/nice-ui.css --style expanded",
+    "copy:scss": "copyfiles -u 1 src/**/*.scss src/nice-ui.scss dist/scss/",
+    "build": "npm run clean && npm run build:css && npm run copy:scss",
+    "build:min": "sass src/index.scss dist/css/nice-ui.min.css --style compressed"
   },
   "repository": {
     "type": "git",
