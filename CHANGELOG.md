@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.3](https://github.com/Meindonsa/nice-ui/compare/0.0.2...0.0.3) (2025-10-22)
+
+### Bug Fixes
+
+* add '--ci' to disable interaction ([1f80dfc](https://github.com/Meindonsa/nice-ui/commit/1f80dfca47137b6973890b9633bfb5888b9a37fc))
+
 ## 0.0.2 (2025-10-22)
 
 ### Features
