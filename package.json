@@ -8,9 +8,10 @@
     "src/"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile",
     "clean": "rimraf dist",
-    "compile": "sass src/index.scss dist/nice-ui.min.css --style compressed"
+    "build:css": "sass src/index.scss dist/css/nice-ui.css --style expanded",
+    "copy:scss": "copyfiles -u 1 src/**/*.scss dist/scss/",
+    "build": "npm run clean && npm run build:css && npm run copy:scss"
   },
   "repository": {
     "type": "git",
