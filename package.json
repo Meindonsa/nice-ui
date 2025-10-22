@@ -10,7 +10,7 @@
   "scripts": {
     "build": "npm run clean && npm run compile",
     "clean": "rimraf dist",
-    "compile": "sass src/styles.scss dist/nice-ui.min.css --style compressed"
+    "compile": "sass src/index.scss dist/nice-ui.min.css --style compressed"
   },
   "repository": {
     "type": "git",
