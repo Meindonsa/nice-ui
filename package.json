@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "index.css",
+    "src/index.scss",
     "src/"
   ],
   "scripts": {
