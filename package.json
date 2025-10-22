@@ -35,7 +35,9 @@
     "access": "public"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.1",
     "copyfiles": "^2.4.1",
+    "release-it": "^19.0.5",
     "rimraf": "^6.0.1",
     "sass": "^1.93.2"
   }
