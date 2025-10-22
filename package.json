@@ -14,10 +14,10 @@
     "copy:scss": "copyfiles -u 1 src/**/*.scss src/nice-ui.scss dist/scss/",
     "build": "npm run clean && npm run build:css && npm run copy:scss",
     "build:min": "sass src/index.scss dist/css/nice-ui.min.css --style compressed",
-    "release:no-increment": "release-it --no-increment",
-    "release:patch": "release-it --increment=patch",
-    "release:minor": "release-it --increment=minor",
-    "release:major": "release-it --increment=major"
+    "release:no-increment": "release-it --no-increment --ci",
+    "release:patch": "release-it --increment=patch --ci",
+    "release:minor": "release-it --increment=minor --ci",
+    "release:major": "release-it --increment=major --ci"
   },
   "repository": {
     "type": "git",
